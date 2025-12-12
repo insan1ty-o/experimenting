@@ -3,10 +3,18 @@
     <header>
         <title>testing stuff</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
     </header>
     <body>
-        <div class="selectable">
-            <img src="resources/index/key.png" alt="Key"></img>
+        <img class="selectable" src="resources/index/key.png" onclick="addCounter('key')" alt="Key"></img>
+        <div id="counters">
+            <div class="counter">
+              <img src="resources/index/key.png" alt="Key"></img>                
+              <p id="keycount">00</p>   
+            </div>
         </div>
     </body>
+    <script src="index.js"></script>
 </html>

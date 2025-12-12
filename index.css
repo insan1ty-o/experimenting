@@ -1,0 +1,15 @@
+body {
+    border: 3px solid black;
+    height: 97vh;
+    cursor: cell;
+    background-image: url("resources/index/basement.png");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 150vh;
+    background-position-x: 9vw;
+    margin: 0px;
+}
+
+.selectable {
+    
+}

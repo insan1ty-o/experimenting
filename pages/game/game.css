@@ -1,5 +1,6 @@
 body {
     height: 97vh;
+    background-image: url("resources/index/backgroundtest.png");
     background-repeat: no-repeat;
     background-color: black;
     background-size: 178vh;
@@ -23,19 +24,6 @@ p {
     color: white;
     font-family: "Jersey 10", sans-serif;
     font-size: 5vh;
-    text-align: center;
-}
-
-.hidden {
-    opacity: 0;
-}
-
-#info {
-    opacity: 100%;
-    margin: 0px;
-    display: flex;
-    justify-self: flex-end;
-    height: 2vh;
 }
 
 .counter {

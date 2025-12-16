@@ -1,15 +1,31 @@
-function textBlink() {
-    const text = document.getElementById("info");
-    while (true) {
-        while (Number(text.style.opacity.split("%"))[0] != 0) {
-            text.style.opacity = `${Number(text.style.opacity) - 5}`;
+function preloadObjects() {
+    const body = document.getElementsByTagName("body")[0];
+    body.onclick = function(){textContinue()};
+    const revealed = document.getElementById("revealed");
+    console.log(revealed)
+    try {
+        for (i=0;i<revealed.length;i++) { 
+            revealed[i].style.opacity = "100%";
         }
-        while (Number(text.style.opacity.split("%"))[0] != 0) {
-            text.style.opacity = `${Number(text.style.opacity) + 5}`;
-        }
+    } catch {
+        
     }
 }
 
 function textContinue() {
-    const sentences = document.getElementsByClassName("hidden")
+    if (sessionStorage.getItem("index") === null) {
+        sessionStorage.setItem("index", 0);
+    }
+    
+    const sentences = document.getElementsByClassName("hidden");
+    console.log(sentences[sessionStorage.getItem("index")].style.opacity);
+    console.log(sessionStorage);
+    console.log(sentences);
+    if (sentences[sessionStorage.getItem("index")].style.opacity = "0%" && Number(sessionStorage.getItem("index")) <= 4) {
+        sentences[sessionStorage.getItem("index")].style.opacity = "100%";
+        sentences[sessionStorage.getItem("index")].id = "revealed";
+
+        sessionStorage.setItem("index", Number(sessionStorage.getItem("index"))+1);
+    }            
+    
 }

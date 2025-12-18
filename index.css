@@ -1,8 +1,8 @@
 body {
-    height: 97vh;
+    background-image: url("resources/game/intro.png");
     background-repeat: no-repeat;
-    background-color: black;
-    margin: 0px;
+    background-size: 180vh;
+    background-position-x: 2vw;
 }
 
 .selectable {

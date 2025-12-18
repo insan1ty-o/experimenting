@@ -1,5 +1,5 @@
 body {
-    background-image: url("../../resources/game/backgroundtest.png");
+    background-image: url("../../resources/game/forestempty.png");
     background-repeat: no-repeat;
     background-size: 180vh;
     background-position-x: 2vw;
@@ -11,14 +11,8 @@ body {
     width: 15vw;
 }
 
-#left {
+#forward {
     position: fixed;
-    top: 50vh;
-    left: 25vw;
-}
-
-#right {
-    position: fixed;
-    top: 50vh;
-    left: 60vw;
+    top: 40vh;
+    left: 43vw;
 }

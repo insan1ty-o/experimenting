@@ -1,0 +1,6 @@
+body {
+    background-image: url("../../resources/game/placeholder.png");
+    background-repeat: no-repeat;
+    background-size: 180vh;
+    background-position-x: 2vw;
+}

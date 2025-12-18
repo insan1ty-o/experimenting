@@ -1,5 +1,5 @@
 body {
-    background-image: url("../../resources/game/backgroundtest.png");
+    background-image: url("../../resources/game/forestshack.png");
     background-repeat: no-repeat;
     background-size: 180vh;
     background-position-x: 2vw;
@@ -8,17 +8,20 @@ body {
 .selectable {
     cursor: cell;
     height: 25vh;
+    border: 3px solid white;
     width: 15vw;
 }
 
-#left {
+#forward {
     position: fixed;
-    top: 50vh;
-    left: 25vw;
+    top: 40vh;
+    width: 5vw;
+    left: 48vw;
 }
 
-#right {
+#shack {
     position: fixed;
-    top: 50vh;
-    left: 60vw;
+    top: 44vh;
+    width: 10vw;
+    left: 55vw;
 }

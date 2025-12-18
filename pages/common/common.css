@@ -1,3 +1,9 @@
+body {
+    height: 97vh;
+    background-color: black;
+    margin: 0px;
+}
+
 .jersey-10-regular {
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;

@@ -1,7 +1,10 @@
 function preloadObjects() {
-    const body = document.getElementsByTagName("body")[0];
-    body.onclick = function(){textContinue()};
-    const revealed = document.getElementById("revealed");
+    const content = document.getElementById("content");
+    if (content.onclick === null) {
+        content.onclick = function(){textContinue()};
+    }
+    
+    const revealed = document.getElementsByClassName("revealed");
     console.log(revealed)
     try {
         for (i=0;i<revealed.length;i++) { 
@@ -13,19 +16,14 @@ function preloadObjects() {
 }
 
 function textContinue() {
-    if (sessionStorage.getItem("index") === null) {
-        sessionStorage.setItem("index", 0);
-    }
-    
     const sentences = document.getElementsByClassName("hidden");
-    console.log(sentences[sessionStorage.getItem("index")].style.opacity);
     console.log(sessionStorage);
     console.log(sentences);
-    if (sentences[sessionStorage.getItem("index")].style.opacity = "0%" && Number(sessionStorage.getItem("index")) <= 4) {
-        sentences[sessionStorage.getItem("index")].style.opacity = "100%";
-        sentences[sessionStorage.getItem("index")].id = "revealed";
-
-        sessionStorage.setItem("index", Number(sessionStorage.getItem("index"))+1);
-    }            
-    
+    if (sentences[0] === undefined) {
+        return
+    } else {        
+        if (sentences[0].style.opacity = "0%" && sentences.length <= 4) 
+            sentences[0].style.opacity = "100%";
+            sentences[0].className = "revealed";
+    }     
 }
